@@ -53,9 +53,15 @@ a{text-decoration:none;color:inherit}
 
 /* HERO */
 .hero{
-  /* Clean illustration only (all text/bubbles are HTML overlays) */
-  background: url("assets/hero-bg.png") 75% 55%/cover no-repeat;
-  /* Keep the illustration visible: cards live on the left and lower area */
+  /* Fallback visible SIEMPRE */
+  background-color: #f3f7ff;
+
+  /* Imagen de fondo */
+  background-image: url("./assets/hero-bg.png");
+  background-position: 75% 55%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   min-height: 690px;
   padding: 28px 0 26px;
   position: relative;
